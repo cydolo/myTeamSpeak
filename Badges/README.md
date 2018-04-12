@@ -1,6 +1,6 @@
 # Badges request
 To receive all TeamSpeak badges, you must send a GET request to 
-```badges-content.teamspeak.com/list.```
+```https://badges-content.teamspeak.com/list.```
 The result you see in the Badges.ini file
 
 # Web-based badges adder
