@@ -1,34 +1,30 @@
 var api = "https://clientapi.myteamspeak.com/";
+var bc  = "https://badges-content.teamspeak.com/";
 var post = {
     methode: {
         1: {a: "authentication"},
         2: {b: "synchronization"},
-        3: {c: "user"}
+        3: {c: "user"},
+        4: {d: "list""}
     }
 };
 class Badges {
-    static Add() {   
-    try {
-        const sender = new XMLHttpRequest();
-    } catch (error) {
-
+    static List_Badges() {
+      try {
+        const ts3 = new XMLHttpRequest();
+        ts3.open("GET",bc + post.methode[4].d,true);
+        ts3.onreadystatechange = function() {
+            if(this.status == 200) {
+                return this.responseText;
+            }
+          }
+        } catch (error) {
+         return "error!";
+        }
+    } 
+    static Add_Badges() {   
     }
- }
- static Remove() {
-     try {
-         const sender = new XMLHttpRequest();
-         sender.open("POST",api + post.methode[3].c,true);
-         sender.onreadystatechange = function(ok) {
-             if (sender.status == "200") {
-                 console.log("Alright, see what happen.." + sender.responseText);
-             }else {
-                 console.log("um.. nope" + sender.responseText);
-             }
-         }
-         //todo
-     } catch (error) {
-        console.log("something happend.." + error);
-     } 
- }
+    static Remove_Badges() {
+    }
 
 }
