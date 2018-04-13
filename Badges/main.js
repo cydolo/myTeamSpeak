@@ -5,7 +5,7 @@ var post = {
         1: {a: "authentication"},
         2: {b: "synchronization"},
         3: {c: "user"},
-        4: {d: "list""}
+        4: {d: "list"}
     }
 };
 class Badges {
@@ -22,6 +22,7 @@ class Badges {
          return "error!";
         }
     } 
+    
     static Add_Badges() {   
     }
     static Remove_Badges() {
