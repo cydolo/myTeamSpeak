@@ -1,6 +1,10 @@
 # TeamSpeak 3 - Version  
-The client sends a GET request to ```https://versions.teamspeak.com/ts3-client-2```
-
+The client sends a GET request to    
+(the same thing comes out with `ts3-client-3`)
+```
+https://versions.teamspeak.com/ts3-client-2     
+https://versions.teamspeak.com/ts3-client-3
+```
 # What we get 
 text: 
 
