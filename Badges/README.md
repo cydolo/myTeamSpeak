@@ -37,7 +37,9 @@ We receive a protobuf with our available badges
 
 # Badges list
 To receive all TeamSpeak badges, you must send a GET request to      
-```GET: https://badges-content.teamspeak.com/list```   
+```
+GET: https://badges-content.teamspeak.com/list
+```   
 `text`  
 ```
 �Ӗ��
