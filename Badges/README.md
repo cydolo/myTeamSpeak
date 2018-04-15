@@ -27,7 +27,12 @@ We receive a protobuf with our available badges
 }
 1 {
   1: "f22c22f1-8e2d-4d99-8de9-f352dc26ac5b"
+  2: 1510398397
+}
+1 {
+  1: "f81ad44d-e931-47d1-a3ef-5fd160217cf8"
   2: 1509192843
+}
 ```
 
 # Badges list
