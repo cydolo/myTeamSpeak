@@ -11,3 +11,18 @@ So that all requests can be assigned correctly to each user, a session is create
 ```
 b842fedc-f4f4-4661-a886-ee427982ae78
 ```
+
+# Login
+To synchronize everything you have to be logged in first, a POST request will be sent:  
+```
+POST: https://clientapi.myteamspeak.com/authentication
+```
+The request-body is sent with login, email and the hashed password:
+
+| parameter  |  email |  password (hashed) |
+| ------------- | ------------- | ------------- |
+| login  | yourmail@gmail.de | *hashed password* |
+
+```
+login yourmail@gmail.com@hashed password
+```
