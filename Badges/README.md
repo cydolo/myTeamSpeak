@@ -34,7 +34,16 @@ We receive a protobuf with our available badges
   2: 1509192843
 }
 ```
-
+# Badges Images
+When the dialog is opened, teamspeak sends a GET request to load the images (png):  
+```
+badges_id = the id of the badges  
+badges_name = name of the badges
+```
+```
+https://badges-content.teamspeak.com/badges_id/badges_name_64.png
+```
+You can see all badges images in the badges_images.ini file.
 # Badges list
 To receive all TeamSpeak badges, you must send a GET request to      
 ```
