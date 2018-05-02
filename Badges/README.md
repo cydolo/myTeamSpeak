@@ -37,11 +37,11 @@ We receive a protobuf with our available badges
 # Badges Images
 When the dialog is opened, teamspeak sends a GET request to load the images (png):  
 ```
-badges_id = the id of the badges  
+badges_uuid = the id of the badges  
 badges_name = name of the badges
 ```
 ```
-https://badges-content.teamspeak.com/badges_id/badges_name_64.png
+https://badges-content.teamspeak.com/badges_uuid/badges_name_64.png
 ```
 You can see all badges images in the badges_images.ini file.
 # Badges list
@@ -107,9 +107,9 @@ $f22c22f1-8e2d-4d99-8de9-f352dc26ac5bRocket Beans TVNhttps://badges-content.t
   6: 1
 }
 3 {
-  1: "d95f9901-c42d-4bac-8849-7164fd9e2310"
+  1: "fa3ece28-64df-431f-b1b3-90844bfdd2d9"
   2: "Paris Games Week 2014"
-  3: "http://badges-content.teamspeak.com/d95f9901-c42d-4bac-8849-7164fd9e2310/paris_gamesweek_2014"
+  3: "http://badges-content.teamspeak.com/fa3ece28-64df-431f-b1b3-90844bfdd2d9/paris_gamesweek_2014"
   4: "Registered at Paris Games Week 2014"
   5: 1489477611
   6: 1
