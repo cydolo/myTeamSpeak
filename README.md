@@ -26,3 +26,18 @@ The request-body is sent with login, email and the hashed password:
 ```
 login yourmail@gmail.com@hashed password
 ```
+
+# Logout
+The client deletes the session when logging out, the following POST will be sent for this
+```
+POST: https://clientapi.myteamspeak.com/authentication
+```
+The request body consists of deleteSession and the current session
+
+| parameter  |  session |
+| ------------- | ------------- |
+| deleteSession  | *your session* |
+
+```
+deleteSession$your_session
+```
