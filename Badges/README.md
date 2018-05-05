@@ -1,3 +1,16 @@
+# Redeem Badges
+To redeem a badge, the following POST will be sent:
+```
+POST: https://clientapi.myteamspeak.com/user
+```
+The code is sent along with the session and looks like this:  
+
+| Method | Code | character | Session |
+| ------------- |------------- | ------------- | ------------- |
+| redeemBadgeCode | the_code | $ | *your session*  |
+```
+redeemBadgeCode 123 $your_session
+```
 # Own Badges
 To get your own badges, TeamSpeak sends a POST request to:
 ```
@@ -7,9 +20,9 @@ The request-body consists of the method "getBadges" and the session
 
 | Method  | character | Session |
 | ------------- | ------------- | ------------- |
-| getBadges | $ | 0a3eaf06-e59b-411d-89d1-cf475a249fd4  |
+| getBadges | $ | *your session*  |
 ```
-getBadges$0a3eaf06-e59b-411d-89d1-cf475a249fd4
+getBadges$your_session
 ```
 We receive a protobuf with our available badges
 ```
