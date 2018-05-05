@@ -21,18 +21,7 @@ We receive a protobuf with our available badges
   1: "50bbdbc8-0f2a-46eb-9808-602225b49627"
   2: 1478771219
 }
-1 {
-  1: "534c9582-ab02-4267-aec6-2d94361daa2a"
-  2: 1503479081
-}
-1 {
-  1: "f22c22f1-8e2d-4d99-8de9-f352dc26ac5b"
-  2: 1510398397
-}
-1 {
-  1: "f81ad44d-e931-47d1-a3ef-5fd160217cf8"
-  2: 1509192843
-}
+...
 ```
 # Badges Images
 When the dialog is opened, teamspeak sends a GET request to load the images (png):  
