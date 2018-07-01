@@ -2,6 +2,8 @@
 ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) `Some things are not directly related to myteamspeak, it is also good to know.`  
 ![#c5f015](https://placehold.it/15/c5f015/000000?text=+) `Here is a detailed documentation about myTeamSpeak.`
 
+These requests are all sent to `https://clientapi.myteamspeak.com/authentication`.
+
 # Session
 So that all requests can be assigned correctly to each user, a session is created. The session is 36 characters long and is structured as follows:
 
@@ -15,6 +17,8 @@ The client sends this generated session with a `Post` request
 ```
 POST: https://clientapi.myteamspeak.com/authentication
 ```
+request-body 
+
 | parameter  |  session |
 | ------------- | ------------- |
 | session  | *your session*
@@ -30,10 +34,10 @@ The request-body is sent with login, email and the hashed password:
 
 | parameter  |  email |  password (hashed) |
 | ------------- | ------------- | ------------- |
-| login  | yourmail@gmail.de | *hashed password* |
+| login  | yourmail@gmail.de | *hashed_password* |
 
 ```
-login yourmail@gmail.com@hashed password
+login yourmail@gmail.com@hashed_password
 ```
 
 # Logout
@@ -41,7 +45,7 @@ The client deletes the session when logging out, the following `Post` will be se
 ```
 POST: https://clientapi.myteamspeak.com/authentication
 ```
-The request body consists of deleteSession and the current session
+The request-body consists of deleteSession and the current session
 
 | parameter  |  session |
 | ------------- | ------------- |
