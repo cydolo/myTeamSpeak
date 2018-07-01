@@ -1,5 +1,5 @@
 # Redeem Badges
-To redeem a badge, the following `POST` will be sent:
+To redeem a badge, the following `Post` will be sent:
 ```
 POST: https://clientapi.myteamspeak.com/user
 ```
@@ -9,11 +9,11 @@ The code is sent along with the session and looks like this:
 | ------------- | ------------- | ------------- |
 | redeemBadgeCode | the_code | *your session*  |
 ```
-redeemBadgeCode 123 $your_session
+redeemBadgeCode the_code$your_session
 ```
 
 # Own Badges
-To get your own badges, TeamSpeak sends a `POST` request to:
+To get your own badges, TeamSpeak sends a `Post` request to:
 ```
 POST: https://clientapi.myteamspeak.com/user
 ```
@@ -38,7 +38,7 @@ We receive a protobuf with our available badges
 ```
 
 # Badges Images
-When the dialog is opened, teamspeak sends a `GET` request to load the images (png):  
+When the dialog is opened, teamspeak sends a `Get` request to load the images (png):  
 ```
 badges_uuid = the uuid of the badges  
 badges_name = name of the badges
@@ -49,7 +49,7 @@ https://badges-content.teamspeak.com/badges_uuid/badges_name_64.png
 You can see all badges images in the badges_images.ini file.
 
 # Badges list
-To receive all TeamSpeak badges, you must send a `GET` request to      
+To receive all TeamSpeak badges, you must send a `Get` request to      
 ```
 GET: https://badges-content.teamspeak.com/list
 ```
