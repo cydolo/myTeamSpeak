@@ -1,5 +1,5 @@
 # Newsticker
-For the newsticker a GET request is sent, every country has a different url, in this case germany for de:  
+For the newsticker a `Get` request is sent, every country has a different url, in this case germany for de:  
 `http://news.teamspeak.com/de/news.txt`
 
 current news (18.04.2018)
