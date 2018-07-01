@@ -11,7 +11,7 @@ So that all requests can be assigned correctly to each user, a session is create
 ```
 b842fedc-f4f4-4661-a886-ee427982ae78
 ```
-The client sends this generated session with a POST request
+The client sends this generated session with a `Post` request
 ```
 POST: https://clientapi.myteamspeak.com/authentication
 ```
@@ -22,7 +22,7 @@ POST: https://clientapi.myteamspeak.com/authentication
 session$your_session
 ```
 # Login
-To synchronize everything you have to be logged in first, a POST request will be sent:  
+To synchronize everything you have to be logged in first, a `Post` request will be sent:  
 ```
 POST: https://clientapi.myteamspeak.com/authentication
 ```
@@ -37,7 +37,7 @@ login yourmail@gmail.com@hashed password
 ```
 
 # Logout
-The client deletes the session when logging out, the following POST will be sent for this
+The client deletes the session when logging out, the following `Post` will be sent for this
 ```
 POST: https://clientapi.myteamspeak.com/authentication
 ```
