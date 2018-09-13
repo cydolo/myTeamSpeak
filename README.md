@@ -30,6 +30,20 @@ request-body
 ```
 session$your_session
 ```
+# Register
+For the registration a `Post` request will be sent to the `user`.
+```
+POST: https://clientapi.myteamspeak.com/user
+```  
+The request-body is sent with E-Mail, hashed password, Username  
+
+| parameter  |  email |  password (hashed) | Username |
+| ------------- | ------------- | ------------- | ------------- |
+| adduser  | yourmail@gmail.de | *hashed_password* | your_username |  
+```
+adduser yourmail@gmail.de@hashed_password Username
+```
+
 # Login
 To synchronize everything you have to be logged in first, a `Post` request will be sent:  
 ```
@@ -44,7 +58,6 @@ The request-body is sent with login, email and the hashed password:
 ```
 login yourmail@gmail.com@hashed_password
 ```
-
 # Logout
 The client deletes the session when logging out, the following `Post` will be sent for this
 ```
