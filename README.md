@@ -7,6 +7,8 @@ https://clientapi.myteamspeak.com/integration
 https://clientapi.myteamspeak.com/user
 https://clientapi.myteamspeak.com/authentication
 https://clientapi.myteamspeak.com/synchronization
+https://clientapi.myteamspeak.com/messanger
+https://clientapi.myteamspeak.com/session
 ```
 
 # Session
