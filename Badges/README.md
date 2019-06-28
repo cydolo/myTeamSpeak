@@ -55,5 +55,3 @@ GET: https://badges-content.teamspeak.com/list
 ```
 `text & protobuf in: badges_protobuf_text.ini`
 
-# Web-based badges adder
-We now know which request is sent to myTeamSpeak to set the badges. We will soon releasing a web-based JavaScript that will allow you to set all badges from the web.
