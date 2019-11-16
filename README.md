@@ -16,6 +16,7 @@ the password is hashed with a password-based key derivation functionality, PBKDF
 
 how the password is hashed?  
 In C#
+
 ```cs
 private static string HashLoginPassword(string email, string password)
 {
