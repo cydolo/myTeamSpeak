@@ -10,6 +10,21 @@ https://clientapi.myteamspeak.com/synchronization
 https://clientapi.myteamspeak.com/messanger
 https://clientapi.myteamspeak.com/session
 ```
+## Password
+
+the password is hashed with a password-based key derivation functionality, PBKDF2, by using a pseudo-random number generator based on HMACSHA1.
+
+how the password is hashed?  
+In C#
+```cs
+private static string HashLoginPassword(string email, string password)
+{
+    byte[] salt = Encoding.UTF8.GetBytes($"{email}ts3Login{password}");
+    byte[] a = Encoding.UTF8.GetBytes(password);
+    var c = new Rfc2898DeriveBytes(a, salt, 10000, HashAlgorithmName.SHA512);
+    return Convert.ToBase64String(c.GetBytes(48));
+}
+```
 
 # Session
 So that all requests can be assigned correctly to each user, a session is created. The session is 36 characters long and is structured as follows:
